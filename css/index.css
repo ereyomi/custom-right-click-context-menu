@@ -15,5 +15,30 @@ ul {
 }
 .ere-container {
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.ere-context-menu,
+.ere-context-menu > ul > li > ul {
+  position: absolute;
+  padding: 10px;
+  border-radius: 8px;
+  width: min-content;
+  background: #fff;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+}
+.ere-context-menu > ul > li,
+.ere-context-menu > ul > li > ul li{
+  display: block;
+  padding: 8px 20px 8px 8px;
+  cursor: pointer;
+  position: relative;
+}
+.ere-context-menu > ul > li:hover {
+  background: #fff;
+}
+.ere-context-menu > ul > li > ul {
+    right: -120px;
+    top: -35px;
 }
