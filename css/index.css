@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.ere-container {
+  width: 100%;
+  height: 100%;
+}
