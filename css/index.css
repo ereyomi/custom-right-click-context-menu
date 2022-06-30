@@ -6,6 +6,7 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
+  position: relative;
 }
 ul {
   list-style-type: none;
@@ -15,7 +16,8 @@ ul {
 .ere-container {
   width: 100%;
   height: 100vh;
-  position: relative;
+  display: grid;
+  place-items: center;
 }
 .ere-context-menu {
   position: absolute;
@@ -23,6 +25,8 @@ ul {
   width: min-content;
   background: #fff;
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+  visibility: hidden;
+  z-index: 9999;
 }
 .ere-context-menu > ul > li {
   display: block;
@@ -33,7 +37,7 @@ ul {
 .ere-context-menu ul li:hover {
   background: rgb(239, 239, 239);
 }
-.shareMenu {
+.subMenus {
   position: absolute;
   border-radius: 8px;
   width: min-content;
@@ -41,15 +45,15 @@ ul {
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
   right: -100px;
   top: -35px;
-  display: none;
-  transition: all 0.5s ease-in-out;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
 }
-.shareMenu li {
+.subMenus li {
   display: block;
   padding: 8px 20px 8px 10px;
   cursor: pointer;
   position: relative;
 }
-.ere-context-menu > ul > li:hover .shareMenu {
-  display: block;
+.ere-context-menu > ul > li:hover .subMenus {
+  visibility: visible;
 }
