@@ -28,14 +28,32 @@ ul {
   visibility: hidden;
   z-index: 9999;
 }
+.ere-context-menu svg {
+  width: 16px;
+}
 .ere-context-menu > ul > li {
   display: block;
-  padding: 8px 20px 8px 10px;
+  padding: 8px 10px 8px 10px;
   cursor: pointer;
   position: relative;
+  min-width: 120px;
 }
 .ere-context-menu ul li:hover {
   background: rgb(239, 239, 239);
+}
+.ere-context-menu ul > li > div,
+.ere-context-menu ul > li > div > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.ere-context-menu ul > li > div > span,
+.ere-context-menu ul > li > div > div > span {
+  margin-left: 5px;
+}
+.subMenus-group {
+  justify-content: space-between;
+  align-items: center;
 }
 .subMenus {
   position: absolute;
