@@ -27,6 +27,7 @@ ul {
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
   visibility: hidden;
   z-index: 9999;
+  overflow: hidden;
 }
 .ere-context-menu svg {
   width: 16px;
